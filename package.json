@@ -8,7 +8,7 @@
   },
   "publisher": "sdrubolo",
   "repository": "https://github.com/sdrubolo/diagram-vscode",
-  "icon": "https://raw.githubusercontent.com/sdrubolo/project-images/master/diagram.png",
+  "icon": "images/logo/diagram.png",
   "categories": [
     "Other"
   ],
