@@ -6,6 +6,9 @@
   "engines": {
     "vscode": "^1.45.0"
   },
+  "publisher": "sdrubolo",
+  "repository": "https://github.com/sdrubolo/diagram-vscode",
+  "icon": "https://raw.githubusercontent.com/sdrubolo/project-images/master/diagram.png",
   "categories": [
     "Other"
   ],
