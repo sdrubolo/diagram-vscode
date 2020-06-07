@@ -1,0 +1,36 @@
+body {
+  background-color: white;
+}
+
+.gallery-item {
+  background-color: white;
+  transition: grid-row-start 300ms linear;
+  transition: transform 300ms ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.gallery-item:hover {
+  transform: scale(1.2);
+}
+
+.gallery-item img {
+  border-radius: 8px;
+  transition: all 1.5s ease;
+}
+
+.gallery-image {
+  padding-top: 5px;
+}
+
+.gallery-item {
+  box-shadow: 0 0 16px #333;
+}
+
+.gallery-item label {
+  color: black;
+}
+
+.gallery-item {
+  border-radius: 8px;
+  padding: 5px 5px;
+}

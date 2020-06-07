@@ -1,0 +1,11 @@
+<svg  viewBox="0 0 24 24"
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xhtml="http://www.w3.org/1999/xhtml"
+	xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+	xmlns:flow-diagram="root" preserveAspectRatio="xMinYMin">
+	<g>
+		<line x1="0.0" y1="12" x2="12" y2="12" stroke="grey" stroke-width="1.0"/>
+	    <polygon points="12,6 23,12 12,18" class="triangle" stroke="grey" fill-opacity="0.0" />
+
+	</g>
+</svg>

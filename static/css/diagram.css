@@ -1,0 +1,63 @@
+.flow-diagram-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 1px solid var(--vscode-editor-background);
+  background-color: var(--vscode-editor-background);
+  width: 100%;
+}
+
+.flow-diagram-controls-group {
+  padding: 5px 0px 5px 5px;
+}
+
+.btn,
+.btn.btn-default {
+  color: var(--vscode-button-foreground);
+  text-shadow: none;
+  border: 1px solid var(--vscode-button-hoverBackground);
+  background-color: var(--vscode-button-background);
+  height: initial;
+  padding: 0 0.8em;
+  font-size: 1em;
+  line-height: 2em;
+}
+
+.btn-group > .btn:last-child {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.btn-group > .btn:first-child {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+body {
+  background-color: #e3e3e3;
+  background-size: 10px 10px;
+  background-position: 0 0, 5px 5px;
+  background-image: linear-gradient(
+      45deg,
+      #ffffff 25%,
+      transparent 25%,
+      transparent 75%,
+      #ffffff 75%,
+      #ffffff
+    ),
+    linear-gradient(
+      45deg,
+      #ffffff 25%,
+      transparent 25%,
+      transparent 75%,
+      #ffffff 75%,
+      #ffffff
+    );
+  padding: 0 0 !important;
+}
+
+::-webkit-scrollbar-corner,
+::-webkit-scrollbar-track-piece {
+  background-color: var(--vscode-editor-background);
+}

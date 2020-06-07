@@ -1,0 +1,119 @@
+<svg viewBox="0 0 240 329" 
+    xmlns="http://www.w3.org/2000/svg" 
+    xmlns:xhtml="http://www.w3.org/1999/xhtml" 
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" 
+    xmlns:flow-diagram="root" preserveAspectRatio="xMinYMin" style="background-color:white">
+    <g>
+        <defs>
+            <g id="normalArrowRight" transform="translate(-10.0,-10.0)">
+                <path d="M 0 4 L 10 10 L 0 16 L 0 4" stroke="black" stroke-width="1" fill="lightgray" />
+            </g>
+            <g id="x">
+                <line x1="-5.0" y1="5.0" x2="5.0" y2="-5.0" stroke="black" stroke-width="1.5" />
+                <line x1="-5.0" y1="-5.0" x2="5.0" y2="5.0" stroke="black" stroke-width="1.5" />
+            </g>
+            <g id="normalArrowLeft">
+                <use transform="rotate(180.0)" xlink:href="#normalArrowRight" />
+            </g>
+            <g id="normalArrowSelf">
+                <use xlink:href="#normalArrowLeft" />
+            </g>
+            <g id="missingArrowSelf">
+                <use xlink:href="#x" />
+            </g>
+            <g id="missingArrowLeft">
+                <use xlink:href="#x" />
+            </g>
+            <g id="missingArrowRight">
+                <use xlink:href="#x" />
+            </g>
+            <pattern id="pinstripe" patternUnits="userSpaceOnUse" width="3.5" height="50" patternTransform="rotate(45)">
+                <line x1="0" y1="0" x2="0" y2="50" stroke="black" stroke-width="0.5" />
+            </pattern>
+        </defs>
+        <g transform="translate(44.0,5)">
+            <g>
+                <g>
+                    <rect x="0.0" y="40.0" rx="1" ry="1" width="60.0" height="60.0" fill="white" stroke="black" stroke-width="1.0" fill-opacity="1.0" />
+                    <g transform="translate(0.0,24.598)">
+                        <g transform="translate(30.0,0.0)">
+                            <text style="font-family:Ubuntu Mono" font-size="14.0">
+                                <tspan x="-3.5" y="48.804">a							</tspan>
+                            </text>
+                        </g>
+                    </g>
+                    <rect x="90.0" y="40.0" rx="1" ry="1" width="60.0" height="60.0" fill="white" stroke="black" stroke-width="1.0" fill-opacity="1.0" />
+                    <g transform="translate(0.0,23.072)">
+                        <g transform="translate(120.0,0.0)">
+                            <text style="font-family:Ubuntu Mono" font-size="14.0">
+                                <tspan x="-3.5" y="51.856">b							</tspan>
+                            </text>
+                        </g>
+                    </g>
+                    <line x1="30.0" y1="100.0" x2="30.0" y2="120.0" style="stroke:rgb(0,0,0);stroke-width:1" />
+                    <line x1="120.0" y1="100.0" x2="120.0" y2="120.0" style="stroke:rgb(0,0,0);stroke-width:1" />
+                    <g>
+                        <g transform="translate(0.0,18.855999)">
+                            <g>
+                                <rect x="110.0" y="120.0" width="20.0" height="58.856" stroke="black" fill-opacity="1.0" stroke-width="0.0" fill="white" />
+                                <rect x="110.0" y="120.0" width="20.0" height="58.856" stroke="black" fill-opacity="0.5" stroke-width="1.0" fill="url(#pinstripe)" />
+                            </g>
+                        </g>
+                        <g>
+                            <g transform="translate(0.0,0.0)">
+                                <g>
+                                    <g>
+                                        <line x1="30.0" y1="120.0" x2="30.0" y2="138.856" style="stroke:rgb(0,0,0);stroke-width:1" />
+                                        <line x1="120.0" y1="120.0" x2="120.0" y2="138.856" style="stroke:rgb(0,0,0);stroke-width:1" />
+                                    </g>
+                                    <text style="font-family:Ubuntu Mono" font-size="14.0">
+                                        <tspan x="40.0" y="131.856">label									</tspan>
+                                    </text>
+                                    <line x1="30.0" y1="138.856" x2="30.0" y2="138.856" stroke="black" stroke-width="1.0" />
+                                    <line x1="30.0" y1="138.856" x2="30.0" y2="138.856" stroke="black" stroke-width="1.0" />
+                                    <line x1="30.0" y1="138.856" x2="110.0" y2="138.856" stroke="black" stroke-width="1.0" />
+                                    <use x="110.0" y="138.856" xlink:href="#normalArrowRight" />
+                                </g>
+                            </g>
+                            <g>
+                                <line x1="30.0" y1="138.856" x2="30.0" y2="158.856" style="stroke:rgb(0,0,0);stroke-width:1" />
+                                <line x1="30.0" y1="158.856" x2="30.0" y2="197.712" style="stroke:rgb(0,0,0);stroke-width:1" />
+                            </g>
+                        </g>
+                    </g>
+                    <g transform="translate(0.0,-18.855999)">
+                        <g>
+                            <text style="font-family:Ubuntu Mono" font-size="14.0">
+                                <tspan x="65.0" y="209.56801">label							</tspan>
+                            </text>
+                            <g>
+                                <line x1="110.0" y1="216.56801" x2="110.0" y2="216.56801" stroke="black" stroke-width="1.0" />
+                                <line x1="110.0" y1="216.56801" x2="110.0" y2="216.56801" stroke="black" stroke-width="1.0" />
+                                <line x1="110.0" y1="216.56801" x2="30.0" y2="216.56801" stroke="black" stroke-width="1.0" />
+                                <use x="30.0" y="216.56801" xlink:href="#normalArrowLeft" />
+                            </g>
+                        </g>
+                    </g>
+                    <line x1="30.0" y1="197.712" x2="30.0" y2="217.712" style="stroke:rgb(0,0,0);stroke-width:1" />
+                    <line x1="120.0" y1="197.712" x2="120.0" y2="217.712" style="stroke:rgb(0,0,0);stroke-width:1" />
+                    <rect x="0.0" y="217.712" rx="1" ry="1" width="60.0" height="60.0" fill="white" stroke="black" stroke-width="1.0" fill-opacity="1.0" />
+                    <g transform="translate(0.0,24.598)">
+                        <g transform="translate(30.0,0.0)">
+                            <text style="font-family:Ubuntu Mono" font-size="14.0">
+                                <tspan x="-3.5" y="226.516">a							</tspan>
+                            </text>
+                        </g>
+                    </g>
+                    <rect x="90.0" y="217.712" rx="1" ry="1" width="60.0" height="60.0" fill="white" stroke="black" stroke-width="1.0" fill-opacity="1.0" />
+                    <g transform="translate(0.0,23.072)">
+                        <g transform="translate(120.0,0.0)">
+                            <text style="font-family:Ubuntu Mono" font-size="14.0">
+                                <tspan x="-3.5" y="229.56801">b							</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
