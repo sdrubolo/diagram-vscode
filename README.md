@@ -4,7 +4,7 @@ This package is thought to allow people describe how entities interact between e
 
 **Diagram Dependencies**
 
-You need to install diagram language to use the extension - this because it has been built for the specific diagram language.
+You need to install diagram language to use the extension - this because it has been built for the specific diagram language. It can be downloaded at [diagram-language](https://marketplace.visualstudio.com/items?itemName=sdrubolo.diagram-language)
 
 ## Current Supported Platforms
 
