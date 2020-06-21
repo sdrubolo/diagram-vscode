@@ -2,7 +2,7 @@
   "name": "diagram",
   "displayName": "diagram",
   "description": "extension for diagram language",
-  "version": "0.2.0",
+  "version": "0.2.2",
   "engines": {
     "vscode": "^1.45.0"
   },
@@ -14,6 +14,9 @@
   ],
   "activationEvents": [
     "onLanguage:diagram"
+  ],
+  "extensionDependencies": [
+    "sdrubolo.diagram-language"
   ],
   "main": "./out/extension.js",
   "contributes": {

@@ -13,9 +13,13 @@ You need to install diagram language to use the extension - this because it has 
 
 ## Release Notes
 
-### 1.0.0
+### 0.2.0
 
 Initial release Diagram editor
+
+### 0.2.1
+
+Add extension dependency
 
 ---
 
