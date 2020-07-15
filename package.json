@@ -2,13 +2,12 @@
   "name": "diagram",
   "displayName": "diagram",
   "description": "extension for diagram language",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "engines": {
     "vscode": "^1.45.0"
   },
   "publisher": "sdrubolo",
   "repository": "https://github.com/sdrubolo/diagram-vscode",
-  "icon": "images/logo/diagram.png",
   "categories": [
     "Other"
   ],
