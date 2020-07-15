@@ -4,7 +4,7 @@ import * as vscode from "vscode";
 import Builder from "./builder";
 import * as fs from "fs";
 import * as path from "path";
-const { convert } = require("convert-svg-to-png");
+const svg2png = require("svg2png");
 const PDFDocument = require("pdfkit");
 const SVGtoPDF = require("svg-to-pdfkit");
 const { parse } = require("svg-parser");
@@ -233,7 +233,7 @@ function svgToPng(
   fontUri: string
 ): Thenable<void> {
   return runBuild(context, title, uri, fontUri, (diagram: any) =>
-    convert(diagram.document).then((d: any) => {
+    svg2png(diagram.document).then((d: any) => {
       return new Promise((resolve, rejects) => {
         fs.writeFile(path, d, "base64", (err: any) => {
           if (err) {
