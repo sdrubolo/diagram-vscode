@@ -2,9 +2,9 @@
   "name": "diagram",
   "displayName": "diagram",
   "description": "extension for diagram language",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "engines": {
-    "vscode": "^1.45.0"
+    "vscode": "^1.34.0"
   },
   "publisher": "sdrubolo",
   "repository": "https://github.com/sdrubolo/diagram-vscode",
@@ -106,8 +106,8 @@
     "@types/dom-parser": "^0.1.0",
     "@types/glob": "^7.1.1",
     "@types/mocha": "^7.0.2",
-    "@types/node": "^13.11.0",
-    "@types/vscode": "^1.45.0",
+    "@types/node": "^10.14.17",
+    "@types/vscode": "^1.34.0",
     "@typescript-eslint/eslint-plugin": "^2.30.0",
     "@typescript-eslint/parser": "^2.30.0",
     "eslint": "^6.8.0",
