@@ -21,6 +21,10 @@ Initial release Diagram editor
 
 Add extension dependency
 
+### 0.2.3
+
+Fix error with SVG to PNG
+
 ---
 
 ## Example

@@ -235,7 +235,7 @@ function svgToPng(
   return runBuild(context, title, uri, fontUri, (diagram: any) =>
     convert(diagram.document).then((d: any) => {
       return new Promise((resolve, rejects) => {
-        fs.writeFile(path, diagram.document, "base64", (err: any) => {
+        fs.writeFile(path, d, "base64", (err: any) => {
           if (err) {
             return rejects(err);
           }
