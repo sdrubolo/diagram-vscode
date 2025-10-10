@@ -4,9 +4,7 @@ import * as vscode from "vscode";
 import Builder from "./builder";
 import * as fs from "fs";
 import * as path from "path";
-import * as sharp from "sharp";
 const { Resvg } = require('@resvg/resvg-js')
-const svg2png = require("svg2png");
 const PDFDocument = require("pdfkit");
 const SVGtoPDF = require("svg-to-pdfkit");
 const { parse } = require("svg-parser");
