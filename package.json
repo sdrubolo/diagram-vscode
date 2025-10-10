@@ -103,8 +103,8 @@
     "typescript": "^3.5.0"
   },
   "dependencies": {
+    "@resvg/resvg-js": "^2.6.2",
     "svg-parser": "^2.0.4",
-    "svg-to-pdfkit": "^0.1.7",
-    "svg2png": "^4.1.1"
+    "svg-to-pdfkit": "^0.1.7"
   }
 }

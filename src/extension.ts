@@ -4,6 +4,8 @@ import * as vscode from "vscode";
 import Builder from "./builder";
 import * as fs from "fs";
 import * as path from "path";
+import * as sharp from "sharp";
+const { Resvg } = require('@resvg/resvg-js')
 const svg2png = require("svg2png");
 const PDFDocument = require("pdfkit");
 const SVGtoPDF = require("svg-to-pdfkit");
@@ -225,6 +227,17 @@ function loadPreview(
   });
 }
 
+function writeFile(filename: string, data: string): Promise<void> {
+  return new Promise((resolve, reject) => {
+    fs.writeFile(filename, data, 'utf8', (err) => {     
+      if (err) {
+        return reject(err);
+      }
+      resolve();
+    });
+  });
+} 
+
 function svgToPng(
   context: vscode.ExtensionContext,
   title: string,
@@ -232,18 +245,19 @@ function svgToPng(
   path: string,
   fontUri: string
 ): Thenable<void> {
-  return runBuild(context, title, uri, fontUri, (diagram: any) =>
-    svg2png(diagram.document).then((d: any) => {
-      return new Promise((resolve, rejects) => {
-        fs.writeFile(path, d, "base64", (err: any) => {
-          if (err) {
-            return rejects(err);
-          }
-          resolve();
-        });
-      });
+  return runBuild(context, title, uri, fontUri, (diagram: any) => {
+    const resvg = new Resvg(diagram.document, {
+         // fitTo: { mode: "width", value: 800 },
+          background: 'rgba(255, 255, 255, 1)',
+          font: {
+            fontFiles: [fontUri], // Load custom fonts.
+            loadSystemFonts: false, // It will be faster to disable loading system fonts.
+          },
     })
-  );
+    const pngData = resvg.render();
+
+    return writeFile(path, pngData.asPng()).then(() => Promise.resolve());
+  });
 }
 
 function svg(
@@ -258,16 +272,7 @@ function svg(
     title,
     uri,
     fontUri,
-    (diagram: any) =>
-      new Promise((resolve, rejects) => {
-        fs.writeFile(path, diagram.document, (err: any) => {
-          if (err) {
-            return rejects(err);
-          }
-          resolve();
-        });
-      })
-  );
+    (diagram: any) => writeFile(path, diagram.document).then(() => Promise.resolve()));
 }
 
 function svgToPdf(
